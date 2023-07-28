@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Class</title>
+    <script src="https://kit.fontawesome.com/796d541e52.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main id="container">
+        <div id="content">
+            <form id="form">
+                <p id="bemVindo" class="bemVindo">Seja bem vindo!</p>
+                <p id="titulo" class="titulo">Realize seu Login</p>
+                <section class="content-input" onclick="borderGreen()">
+                    <label for="email"><small>E-mail</small></label>
+                    <input class="label" name="email" type="email" placeholder="Digite seu e-mail">
+                </section>
+                <section class="content-input" onclick="borderColor()">
+                    <label for="senha"><small>Senha</small></label>
+                    <input class="label" name="senha" type="password" placeholder="Insira sua senha" onclick="borderGreen()">
+                    <i class="fa-regular fa-eye-slash"></i>
+                </section>
+            <div class="paragraphs">
+                <input id="checkbox" type="checkbox" checked>                
+                    <label id="lembrarSenha">Lembrar-me</label>                
+                    <label id="esqueciSenha">Esqueci minha senha</label>                
+            </div>
+                <button id="entrar" type="submit" onclick="entrar()"><a href="html/mentores.html">Entrar</a></button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

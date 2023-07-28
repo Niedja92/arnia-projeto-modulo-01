@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentorias</title>
+    <link href="../css/mentoria.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/796d541e52.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/mentorias.js" defer></script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Usuário</h1>
+      <span>usuario@usuario.com</span>
+    </div>
+  </header>
+    <div>
+        <h1>Mentorias</h1>
+        <a href="cadastrarMentoria.html"><button type="button" onclick="novaMentoria()">Nova Mentoria</button></a>
+    </div>
+    <div>
+        <table class="table table-striped table-hover table-borderless">
+          <thead>
+            <tr class="thead-tr">
+              <th scope="col">Título da mentoria</th>
+              <th scope="col">Mentor</th>
+              <th scope="col">Status</th>
+              <th scope="col">Ações</th>
+            </tr> 
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+      </div>
+
+      <div id="menu">
+        <span><a href="mentores.html">Mentores</a></span>
+        <span><a href="mentorias.html">Mentorias</a></span>
+        <span><a href="turmas.html">Turmas</a></span>
+        <span><a href="alunas.html">Alunos</a></span>
+      </div>
+</body>
+</html>

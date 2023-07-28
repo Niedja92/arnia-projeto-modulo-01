@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+form { 
+    width: 300px;
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bemVindo {
+    font-size: 1rem;
+    color: #424242;
+    margin-bottom: 0.5rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 1em;
+    font-family: 'Sora', sans-serif;
+}
+
+label {
+    margin: 2px 3px;   
+}
+
+input {
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    height: 2.5rem;
+    outline: 0;
+    color: #BDBDBD;
+}
+
+i {
+    position: absolute;
+    bottom: .8rem;
+    right: .8rem;
+    align-items: center;
+}
+
+
+#lembrarSenha {
+    font-weight: bold;
+    color: #212121;
+    font-size: .7rem;
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 1rem;
+}
+
+#esqueciSenha {
+    color: #616161;
+    font-size: .7rem;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+}
+ 
+#checkbox {
+    cursor: pointer;
+    position: absolute;
+}
+
+.content-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    width: 100%;
+    font-size: 13px;
+    color: #757575;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.paragraphs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    position: relative;
+    top: 1rem;
+}
+
+.label {
+    padding: 5px;
+}
+
+::-webkit-input-placeholder {
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 5px;
+}
+
+a, button {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 2.5rem;
+    background-color: #482D83;
+    color: #FFFFFF;
+    font-size: .7rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}

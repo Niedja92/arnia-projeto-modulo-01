@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova mentoria</title>
+    <link href="../css/editarMentoria.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/796d541e52.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/editarMentoria.js" defer></script> 
+</head>
+<body>
+    <div>
+        <h1>Editar mentoria</h1>
+    </div>
+    <div>
+        <button><a href="mentorias.html">Voltar</a></button>
+        <span>Dados</span>
+    </div>
+    <div>
+        <form id="formulario">
+            <label for="tituloDaMentoria">Título da mentoria</label><br>
+            <input id="tituloDaMentoria" name="tituloDaMentoria">
+            
+            <label for="mentor">Mentor</label><br>
+            <select id="mentor">
+            </select>
+            <div class="form-check form-switch">
+                <label for="status">Status</label><br>
+                <span class="form-check-label" for="flexSwitchCheckChecked">Ativo</span>
+                <input class="form-check-input" type="checkbox" id="status" checked>
+                
+              </div>
+            <div>
+                <button type="submit()">Salvar</button>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
