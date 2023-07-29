@@ -10,7 +10,6 @@ main {
     display: flex;
     flex-direction: wrap;
     flex-direction: row-reverse;
-    margin: 0;
 }
 
 .container {
@@ -62,9 +61,8 @@ main {
     font-size: 26px;
     font-weight: 600;
     margin-left: 20px;
-    margin-top: 2rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
-    padding: 0px;
 }
 
 #input-button-lista-mentores {
@@ -121,8 +119,7 @@ main {
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0px 1px 6px 0px #1e1e1e40;
-    margin: 20px;
-    margin-top: 15rem;
+    margin: 0px;
     width: 100%;
 }
 
@@ -131,7 +128,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 25%;
+    width: 15%;
     margin: 0px;
 }
 
@@ -155,9 +152,7 @@ span, b {
 #lista-itens {
     width: 95%;
     height: 3rem;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    margin-left: 8px;
     outline: 0;
     border: none;
     height: 2.9rem;
@@ -175,29 +170,38 @@ span, b {
 
 li {
     list-style-type: none;
-    background: #6950A1;
     margin-right: 5px; 
     margin-bottom: 5px;
     height: 3rem;
-    border-radius: 12px;
+    border-radius: 5px;
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.style:hover {
+    background-color: #5d3ba6;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 #mentores, #mentorias, #turmas, #alunos {
   text-decoration: none;
+  font-weight: 300;
   color: #FFFFFF;
 }
 
 .ph-chalkboard-teacher, .ph-notebook, .ph-monitor-play, .ph-users-three {
     font-size: 25px;
-    font-weight: none;
     margin: 5px;
     text-align: center;
+    padding: 10px;
 }
 
 th {
     font-size: 12px;
     font-weight: 400;
+    color: #FFFFFF;
 }
 
 tr {
@@ -209,15 +213,13 @@ tr {
     color: #212121;
 }
 
-tr:nth-child(odd) {
-    background-color: #F5F5F5;
-}
-
 .bg-success {
-    background-color: #482D83;
+    background: #482D83;
     color: #FFFFFF;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    height: 3.5rem;
+    border: none;
 }
 
 #email {

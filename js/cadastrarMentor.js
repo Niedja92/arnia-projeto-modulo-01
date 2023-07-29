@@ -1,4 +1,4 @@
-const formulario = document.getElementById('formulario')
+const formulario = document.querySelector('.formulario')
 
 const cadastrarMentor = async (mentor) => {
     await fetch('http://localhost:3000/mentores', {

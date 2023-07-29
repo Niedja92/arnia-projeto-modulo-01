@@ -3,32 +3,65 @@
 <html>
   <head>
     <title>Cadastro</title>
-    <link href="cadastrarMentor.css" rel="stylesheet" />
+    <link href="../css/cadastrarMentor.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/796d541e52.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="../js/cadastrarMentor.js" defer></script>
   </head>
+
   <body>
-    <div>
-     <div>
-        <a href="mentores.html"><button>Voltar</button></a>
-     </div>   
-     <h1>Dados</h1>
-    </div>
-    <div>
-        <form id="formulario">
-          <section>
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome">
-          </section>  
-          <section>
-            <label for="email">E-mail</label>
-            <input id="email" name="email">
-          </section>
-            
-          <a><button type="submit">Salvar</button></a> 
-        </form>
-    </div>     
-  </body>
+    <main>
+      <div class="container">
+        <div id="cabecalho">
+          <div id="icone-usuario">
+            <i class="ph ph-user"></i>
+          </div>
+          <div id="dados-usuario">
+            <h3 class="cabecalho-usuario" id="usuario">                    
+              Usuário
+            </h3>            
+            <p class="cabecalho-usuario" id="email-usuario">usuario@gmail.com</p>
+          </div>       
+        </div>         
+        
+        <div>
+          <a href="../html/mentores.html"><button id="btn-novo-mentor"><i class="ph-bold ph-arrow-left"></i></button></a>
+          <span id="novo-mentor">Novo mentor</span> 
+        </div>   
+               
+        <div id="dados-mentor">
+          <h1 id="dados">Dados</h1>
+          <div>
+            <form class="formulario">
+              <div id="input-nome">
+                <label for="nome"><small>Nome</small></label><br>
+                <input id="nome" class="input-dados" name="nome">
+              </div>  
+              <div id="input-email">
+                <label for="email"><small>E-mail</small></label><br>
+                <input id="email" class="input-dados" name="email">
+              </div>
+            </div>
+              <div id="button-salvar">
+                <button id="button-dados" type="submit"><a>Salvar</a></button>
+              </div>              
+            </form>
+        </div>        
+      </div> 
+
+      <div id="menu-itens">
+        <div id="mentor-class">
+          <h2><span>mentor</span><b>class</b></h2>
+        </div>
+        <div id="lista-itens">
+          <ul id="lista">
+            <li class="style"><i class="ph ph-chalkboard-teacher"></i><a id="mentores" href="mentores.html">Mentores</a></li>
+            <li class="style"><i class="ph ph-notebook"></i><a id="mentorias" href="mentorias.html">Mentorias</a></li>
+            <li class="style"><i class="ph ph-monitor-play"></i><a id="turmas" href="">Turmas</a></li>
+            <li class="style"><i class="ph ph-users-three"></i><a id="alunos" href="">Alunos</a></li>
+          </ul>
+        </div>
+      </div>
+  </main>
+</body>
 </html>

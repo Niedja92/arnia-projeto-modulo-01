@@ -55,7 +55,7 @@ const getRota = async (rota) => {
   }
 }
 
-const novoMentor = () => {
+const cadastrarMentor = () => {
   window.location = '../html/cadastrarMentor.html'
 }
 
