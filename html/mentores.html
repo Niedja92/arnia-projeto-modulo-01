@@ -4,40 +4,41 @@
     <title>Cadastro</title>
     <link href="../css/mentores.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/796d541e52.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../app.js" defer></script>
   </head>
   <body>
-    <main>
-      <div class="container">
+    <main>        
+      <div class="container"> 
         <div id="cabecalho">
-            <div id="espaco-cabecalho">
-                <div id="icone-usuario">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-                <h3 class="cabecalho" id="usuario">                    
-                    Usuário
-                </h3>            
-                <p class="cabecalho" id="email-usuario">usuario@gmail.com</p>
-            </div>
+          <div id="icone-usuario">
+            <i class="ph ph-user"></i>
+          </div>
+          <div id="dados-usuario">
+            <h3 class="cabecalho-usuario" id="usuario">                    
+              Usuário
+            </h3>            
+            <p class="cabecalho-usuario" id="email-usuario">usuario@gmail.com</p>
+          </div>  
         </div>
+          <h1 id="titulo">Mentores</h1>       
       <div id="div-dados-mentores">     
-        <h1>Mentores</h1>
+         
         <div id="lista-dados-mentores">
           <div id="input-button-lista-mentores">
-            <input id="pesquisa" placeholder="Pesquise uma palavra-chave"/>
-            <button id="button-magnifying-glass"><i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i></button>                
-            <!-- //<button class="novo-mentor"><i id="icone-mentor" class="fa-sharp fa-solid fa-plus"></i><a class="a-new-mentor" href="../html/novoMentor.html" onclick="novoMentor()">Novo Mentor</a></button> -->
-            <a href="../html/cadastrarMentor.html"><button type="button" onclick="novoMentor()">Novo Mentor</button></a> 
+            <input id="pesquisa" placeholder="Pesquise uma palavra-chave"/><i class="ph ph-magnifying-glass"></i>
+            <button id="button-adicionar" type="button" onclick="novoMentor()">
+              <a id="ph-plus" href="../html/cadastrarMentor.html"><i class="ph ph-plus"></i>Novo Mentor</a>
+            </button>
           </div>
           <div class="conteudo-tabela">
             <table class="table table-striped table-hover table-borderless">
               <thead id="thead">
-                <tr class="thead-tr">
-                  <th scope="col">Nome</th>
-                  <th scope="col">E-mail</th>
-                  <th scope="col">Ações</th>
+                <tr class="bg-success">
+                  <th id=nome class="bg-success">Nome</th>
+                  <th id="email" class="bg-success">E-mail</th>
+                  <th id="acoes" class="bg-success">Ações</th>
                 </tr> 
               </thead>
               <tbody id="tbody">
@@ -53,10 +54,10 @@
         </div>
         <div id="lista-itens">
           <ul id="lista">
-            <li><i id="mentores" class="fa-solid fa-user-tie"></i><a href="mentores.html">Mentores</a></li>
-            <li><i id="mentorias"class="fa-solid fa-book"></i><a href="mentorias.html">Mentorias</a></li>
-            <li><i id="turmas"class="fa-sharp fa-solid fa-desktop"></i><a href="">Turmas</a></li>
-            <li><i id="alunos"class="fa-solid fa-users"></i><a href="">Alunos</a></li>
+            <li class="style"><i class="ph ph-chalkboard-teacher"></i><a id="mentores" href="mentores.html">Mentores</a></li>
+            <li class="style"><i class="ph ph-notebook"></i><a id="mentorias" href="mentorias.html">Mentorias</a></li>
+            <li class="style"><i class="ph ph-monitor-play"></i><a id="turmas" href="">Turmas</a></li>
+            <li class="style"><i class="ph ph-users-three"></i><a id="alunos" href="">Alunos</a></li>
           </ul>
         </div>
       </div>

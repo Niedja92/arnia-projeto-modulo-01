@@ -10,8 +10,8 @@ const mostrarMentores = (tabela) => {
             <td>${mentor.nome}</td>
             <td>${mentor.email}</td>
             <td>
-              <button onclick="editarMentor(${mentor.id})"><i class="fa-solid fa-pencil"></i></button>
-              <button onclick="excluirMentor(${mentor.id})"><i class="fa-regular fa-trash-can"></i></button>
+              <button class="button-icone" onclick="editarMentor(${mentor.id})"><i class="ph-bold ph-pencil-simple"></i></i></i></button>
+              <button class="button-icone" onclick="excluirMentor(${mentor.id})"><i class="ph ph-trash"></i></button>
             </td>  
           </tr>             
     `
