@@ -1,7 +1,7 @@
 const formulario = document.querySelector('.formulario')
 
 const cadastrarMentor = async (mentor) => {
-    await fetch('http://localhost:3000/mentores', {
+    await fetch('https://api-arnia-projeto-modulo-01.onrender.com/mentores', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',

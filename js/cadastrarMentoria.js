@@ -3,7 +3,7 @@ const formulario = document.getElementById('formulario')
 
 //2º
 const buscarMentor = async (id) => {
-    const resposta = await fetch(`http://localhost:3000/mentores/${id}`)
+    const resposta = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentores/${id}`)
     const mentor = await resposta.json()
     return mentor
 }
@@ -11,7 +11,7 @@ const buscarMentor = async (id) => {
 
 //1º
 const buscarMentores = async () => {
-    const resposta = await fetch('http://localhost:3000/mentores')
+    const resposta = await fetch('https://api-arnia-projeto-modulo-01.onrender.com/mentores')
     const mentores = await resposta.json()
     return mentores
 }
@@ -32,7 +32,7 @@ const carregarSelect = async () => {
 
 //4º
 const cadastrarMentoria = async (mentoria) => {
-    await fetch('http://localhost:3000/mentorias', {
+    await fetch('https://api-arnia-projeto-modulo-01.onrender.com/mentorias', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',

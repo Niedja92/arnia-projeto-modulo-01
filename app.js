@@ -26,7 +26,7 @@ const getMentores = async (textoPesquisa = null) => {
     palavraChave = `?q=${textoPesquisa}`
   }
 
-  const apiResponse = await fetch(`http://localhost:3000/mentores${palavraChave}`)
+  const apiResponse = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentores${palavraChave}`)
   const tabelaMentores = await apiResponse.json()
   mostrarMentores(tabelaMentores)
 
@@ -34,7 +34,7 @@ const getMentores = async (textoPesquisa = null) => {
 
 const getMentorClass = async() => {
   try {
-    const apiResponse = await fetch ('http://localhost:3000/mentores')
+    const apiResponse = await fetch ('https://api-arnia-projeto-modulo-01.onrender.com/mentores')
     const mentores = await apiResponse.json()
     console.log(mentores)
     mostrarMentores(mentores)
@@ -46,7 +46,7 @@ const getMentorClass = async() => {
 
 const getRota = async (rota) => {
   try {
-    const apiResponse = await fetch (`http://localhost:3000/${rota}`)
+    const apiResponse = await fetch (`https://api-arnia-projeto-modulo-01.onrender.com/${rota}`)
     const mentorClass = await apiResponse.json()
     mostrarMentores(mentorClass)
 
@@ -64,7 +64,7 @@ const editarMentor = (id) => {
 }
 
 const excluirMentor = async (id) => {
-    await fetch(`http://localhost:3000/mentores/${id}`, {
+    await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentores/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-type': 'application/json'

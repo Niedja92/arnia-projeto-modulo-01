@@ -28,7 +28,7 @@ const mostrarTabelaMentoria = (mentorias) => {
 
 const getMentorias = async () => {
     try {
-        const apiResponse = await fetch('http://localhost:3000/mentorias')
+        const apiResponse = await fetch('https://api-arnia-projeto-modulo-01.onrender.com/mentorias')
         const mentorias = await apiResponse.json()
         console.log(mentorias)
         mostrarTabelaMentoria(mentorias)
@@ -39,7 +39,7 @@ const getMentorias = async () => {
 
 const getRota = async (rota) => {
     try {
-        const apiResponse = await fetch(`http://localhost:3000/${rota}`)
+        const apiResponse = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/${rota}`)
         const mentoriaClass = await apiResponse.json()
         console.log(mentoriaClass)
         mostrarTabelaMentoria(mentoriaClass)
@@ -58,7 +58,7 @@ const editarMentoria = (id) => {
 
 const excluirMentoria = async (id) => {
     try {
-        await fetch(`http://localhost:3000/mentorias/${id}`, {
+        await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentorias/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-type': 'application/json'

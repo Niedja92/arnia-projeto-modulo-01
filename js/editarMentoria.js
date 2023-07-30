@@ -9,19 +9,19 @@ const getIdUrl = () => {
 }
 
 const buscarMentoria = async (id) => {
-    const resposta = await fetch(`http://localhost:3000/mentorias/${id}`)
+    const resposta = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentorias/${id}`)
     const mentoria = await resposta.json()
     return mentoria
 }
 
 const buscarMentor = async (id) => {
-    const resposta = await fetch(`http://localhost:3000/mentores/${id}`)
+    const resposta = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentores/${id}`)
     const mentor = await resposta.json()
     return mentor
 }
 
 const buscarMentores = async () => {
-    const resposta = await fetch('http://localhost:3000/mentores')
+    const resposta = await fetch('https://api-arnia-projeto-modulo-01.onrender.com/mentores')
     const mentores = await resposta.json()
     return mentores
 }
@@ -45,7 +45,7 @@ const carregarDadosFormulario = async (mentoria) => {
 }
 
 const editarMentoria = async (id, mentoria) => {
-    await fetch(`http://localhost:3000/mentorias/${id}`, {
+    await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentorias/${id}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',

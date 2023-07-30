@@ -12,7 +12,7 @@ const recuperarDadosId = () => {
 
 //2º buscar o mentor cadastrado através do endereço da URL passando o parâmetro, que nesse caso, será o ID. Obs.: função assíncrona.
 const buscarMentor = async (id) => {
-    const resultado = await fetch(`http://localhost:3000/mentores/${id}`)
+    const resultado = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentores/${id}`)
     const mentor = await resultado.json()
     return mentor
 }
@@ -33,7 +33,7 @@ const carregarDadosEditar = async () => {
 
 //5º
 const editarMentor = async (id, mentor) => {
-    await fetch(`http://localhost:3000/mentores/${id}`, {
+    await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentores/${id}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',
