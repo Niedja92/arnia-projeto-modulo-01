@@ -16,8 +16,8 @@ const mostrarTabelaMentoria = (mentorias) => {
             <td>${status}</td>
             <div>
                 <td>
-                    <button type="submit" onclick="editarMentoria(${mentoria.id})"><i class="fa-solid fa-pencil"></i></button>
-                    <button type="submit" onclick="excluirMentoria(${mentoria.id})"><i class="fa-regular fa-trash-can"></i></button>
+                    <button class="button-icone" onclick="editarMentoria(${mentoria.id})"><i class="ph-bold ph-pencil-simple"></i></button>
+                    <button class="button-icone" onclick="excluirMentoria(${mentoria.id})"><i class="ph ph-trash"></i></button>
                 </td>
             </div>
         </tr>

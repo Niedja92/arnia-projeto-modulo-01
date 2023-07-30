@@ -9,7 +9,276 @@
 
 main {
     display: flex;
-    flex-direction: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row-reverse;
-    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+#icone-usuario {
+    background-color: #6950A1;
+    border-radius: 100%;
+    height: 2.7rem;
+    width: 2.7rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 11rem;
+    top: 2.1rem;
+}
+
+.ph-user {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    margin-top: .7rem;
+}
+
+#usuario {
+    color: #212121;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#email-usuario {
+    color: #757575;
+    font-size: 13px;
+}
+
+#titulo {
+    color: #212121;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 2rem;
+}
+
+
+#input-button-lista-mentorias {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pesquisa {
+    color: #757575;
+    width: 25%;
+    font-size: 12px;
+    height: 2.7rem;
+    border-radius: 12px;
+    background: #FFFFFF;
+    outline: none;
+    padding: 7px;
+    border: 1.5px solid #E0E0E0;
+}
+
+.ph-magnifying-glass {
+    color: #6950A1;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 33rem;
+    margin-top: 11px;
+}
+
+#button-adicionar {
+    background: #00C247;
+    width: 17%;
+    border: none;
+    border-radius: 12px;
+    height: 2.7rem;
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+
+.ph-plus, #ph-plus {
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+
+.ph-plus {
+    font-size: 20px;
+    position: absolute;
+    color: #FFFFFF;
+    right: 12rem;
+}
+
+#div-dados-mentorias {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 25px 0px #92929233;
+    width: 100%;
+}
+
+.ph-pencil-simple {
+    color: #004CE8;
+    font-size: 20px;
+}
+
+.ph-trash {
+ color: #FF3333;
+ font-size: 20px;
+}
+
+.button-icone{
+    border: none;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #FFFFFF;
+}
+
+#menu-itens{
+    background-color: #482D83;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 15%;
+    margin: 0px;
+}
+
+#mentor-class {
+    margin: 20px;
+}
+
+span {
+    color: #FBB04D;
+    font-weight: 300;
+}
+
+b {
+    color: #FFFFFF;
+}
+
+span, b {
+    font-size: 27px;
+}
+
+#lista-itens {
+    width: 95%;
+    height: 3rem;
+    margin-left: 8px;
+    outline: 0;
+    border: none;
+    height: 2.9rem;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+#lista {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 5px; 
+    margin-bottom: 5px;
+    height: 3rem;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.style:hover {
+    background-color: #5d3ba6;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#mentores, #mentorias, #turmas, #alunos {
+  text-decoration: none;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.ph-chalkboard-teacher, .ph-notebook, .ph-monitor-play, .ph-users-three {
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.conteudo-tabela {
+    margin: 10px;
+}
+
+th {
+    background-color: #482D83 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+}
+
+#titulo-tabela, #mentor-tabela, #status-tabela, #acoes-tabela {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 300;
+    align-items: center;
+}
+
+#titulo-tabela {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+#mentor-tabela {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#status-tabela {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#acoes-tabela {
+    border-top-left-radius: 0px;
+}
+
+#tbody {
+    font-size: 12px;
+    color: #212121;
+}
+
+.thead {
+    height: 2rem;
+}
+
+table {
+    width: 100%;
+}
+
+.ph-pencil-simple {
+    color: #004CE8;
+    font-size: 15px;
+}
+
+.ph-trash {
+ color: #FF3333;
+ font-size: 15px;
+}
+
+.button-icone{
+    border: none;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
 }
