@@ -35,8 +35,8 @@ main {
     display: flex;
     justify-content: center;
     position: absolute;
-    margin-right: 9rem;
-    top: 2.1rem;
+    margin-right: 11rem;
+    top: 2.2rem;
 }
 .ph-user {
     font-size: 1.3rem;
@@ -49,11 +49,6 @@ main {
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 2px;
-}
-
-#email-usuario {
-    color: #757575;
-    font-size: 13px;
 }
 
 #nova-mentoria {
@@ -83,6 +78,7 @@ main {
     margin-left: 15px;
     border: none;
     position: absolute;
+    cursor: pointer;
 }
 
 #dados-mentoria {
@@ -103,18 +99,11 @@ main {
     padding-bottom: 10px;
 }
 
-.input-dados {
-    display: flex;
-    font-size: 13px;
-    color: #757575;
-}
-
 input {
     height: 2.7rem;
     border-radius: 12px;
-    width: 320px;
+    width: 500px;
     border: 1px solid #E0E0E0;
-    margin-right: 20px;
     padding: 10px;
     outline: 0;
 }
@@ -125,15 +114,51 @@ label {
     margin-left: 3px;
 }
 
+#mentor {
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    outline: 0;
+    height: 2.7rem;
+    border-radius: 12px;
+    width: 320px;
+}
+
+#dados-formulario {
+    display: flex;
+    margin-top: 20px;
+}
+
+#input-titulo {
+    margin-right: 20px;
+}
+
 .formulario {
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     margin-top: 20px;
     font-size: 13px;
 }
 
-#input-titulo {
-    margin-left: 20px;
+.form-check {
+    margin-top: 5px;
+}
+
+.status{
+    margin-top: 20px;
+}
+
+#status {
+    background-color: #00C247;
+    width: 3rem;
+    height: 1.3rem;
+    border: none;
+}
+
+.form-check-label {
+    color: #212121;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 400;
 }
 
 #button-dados {
@@ -148,6 +173,11 @@ label {
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+#button-salvar {
+    margin-top: 3rem;
 }
 
 #menu-itens{

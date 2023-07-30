@@ -35,9 +35,10 @@ main {
     display: flex;
     justify-content: center;
     position: absolute;
-    margin-right: 9rem;
+    right: 11rem;
     top: 2.1rem;
 }
+
 .ph-user {
     font-size: 1.3rem;
     color: #FFFFFF;
@@ -56,89 +57,8 @@ main {
     font-size: 13px;
 }
 
-#novo-mentor {
-    color: #212121;
-    font-size: 27px;
-    font-weight: 600;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    margin-left: 4.5rem;
-}
-
-.ph-arrow-left {
-    color: #616161;
-    border-radius: 100%;
-    font-size: 15px;
-    text-decoration: none;
-    margin-right: 20px;
-    margin-top: 8px;
-    margin-left: 13px; 
-}
-
-#btn-editar-mentor {
-    background-color: #EEEEEE;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    margin-left: 15px;
-    border: none;
-    position: absolute;
-    cursor: pointer;
-}
-
-#dados-mentor {
-    box-shadow: 0px 0px 25px 0px #76747433;
-    margin-top: 15px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-#dados {
-    color: #482D83;
-    font-size: 17px;
-    font-weight: 500;
-    font-family: 'Sora', sans-serif; 
-    border-bottom: 1.5px solid #BDBDBD;
-    display: block;
-    padding-bottom: 10px;
-}
-
-#formulario {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-input {
-    height: 2.7rem;
-    border-radius: 12px;
-    width: 320px;
-    border: 1px solid #E0E0E0;
-    margin-right: 20px;
-    padding: 10px;
-    outline: 0;
-}
-
-label {
-    color: #757575;
-    font-size: 13px;
-    margin-left: 3px;
-}
-
-#button-dados {
-    height: 2.5rem;
-    border-radius: 15px;
-    width: 320px;
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    border: 1px solid #E0E0E0;    
-    background-color: #482D83;
-    color: #FFFFFF;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
+#informacao {
+    color: red;
 }
 
 #menu-itens{
@@ -201,17 +121,4 @@ li {
     background-color: #5d3ba6;
     cursor: pointer;
     font-weight: 500;
-}
-
-#mentores, #mentorias, #turmas, #alunos {
-  text-decoration: none;
-  font-weight: 300;
-  color: #FFFFFF;
-}
-
-.ph-chalkboard-teacher, .ph-notebook, .ph-monitor-play, .ph-users-three {
-    font-size: 25px;
-    margin: 5px;
-    text-align: center;
-    padding: 10px;
 }

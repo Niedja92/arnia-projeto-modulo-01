@@ -26,13 +26,14 @@
 
             <div>
                 <a href="../html/mentorias.html"><button id="btn-nova-mentoria"><i class="ph-bold ph-arrow-left"></i></button></a>
-                <span id="nova-mentoria">Nova mentoria</span> 
+                <span id="nova-mentoria">Mentoria</span> 
             </div> 
         
             <div id="dados-mentoria">
                 <span id="dados">Dados</span>
                 <div>
                     <form id="formulario">
+                      <div id="dados-formulario">
                         <div id="input-titulo">
                             <label for="tituloDaMentoria">Título da mentoria</label><br>
                             <input id="tituloDaMentoria"class="input-dados" name="tituloDaMentoria">
@@ -41,34 +42,36 @@
                             <label for="mentor">Mentor</label><br>
                             <select id="mentor">
                             </select>
-                        </div>
-                        
+                        </div>                        
+                      </div>
+                
+                        <label class="status" for="status">Status</label><br>                        
                         <div class="form-check form-switch">
-                            <label for="status">Status</label><br>
-                            <span class="form-check-label" for="flexSwitchCheckChecked"></span>
-                            <input class="form-check-input" type="checkbox" id="status" value="ativo" checked>
+                          <input class="form-check-input" type="checkbox" name="checkbox" id="status" value="ativo">
+                          <span class="form-check-label" for="flexSwitchCheckChecked">Ativo</span>
                         </div>
-
+              
                         <div id="button-salvar">
                             <button id="button-dados" type="submit">Salvar</button>
                         </div>    
                     </form>
                 </div>
             </div>
-            <div id="menu-itens">
-                <div id="mentor-class">
-                  <h2><span>mentor</span><b>class</b></h2>
-                </div>
-                <div id="lista-itens">
-                  <ul id="lista">
-                    <li class="style"><i class="ph ph-chalkboard-teacher"></i><a id="mentores" href="mentores.html">Mentores</a></li>
-                    <li class="style"><i class="ph ph-notebook"></i><a id="mentorias" href="mentorias.html">Mentorias</a></li>
-                    <li class="style"><i class="ph ph-monitor-play"></i><a id="turmas" href="">Turmas</a></li>
-                    <li class="style"><i class="ph ph-users-three"></i><a id="alunos" href="">Alunos</a></li>
-                  </ul>
-                </div>
+          </div>
+
+          <div id="menu-itens">
+              <div id="mentor-class">
+                <h2><span>mentor</span><b>class</b></h2>
               </div>
-        </div>
+              <div id="lista-itens">
+                <ul id="lista">
+                  <li class="style"><i class="ph ph-chalkboard-teacher"></i><a id="mentores" href="mentores.html">Mentores</a></li>
+                  <li class="style"><i class="ph ph-notebook"></i><a id="mentorias" href="mentorias.html">Mentorias</a></li>
+                  <li class="style"><i class="ph ph-monitor-play"></i><a id="turmas" href="">Turmas</a></li>
+                  <li class="style"><i class="ph ph-users-three"></i><a id="alunos" href="">Alunos</a></li>
+                </ul>
+              </div>
+            </div>    
     </main>
 </body>
 </html>

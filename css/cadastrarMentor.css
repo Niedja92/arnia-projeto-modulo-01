@@ -84,6 +84,7 @@ main {
     margin-left: 15px;
     border: none;
     position: absolute;
+    cursor: pointer;
 }
 
 #dados-mentor {
@@ -102,12 +103,6 @@ main {
     border-bottom: 1.5px solid #BDBDBD;
     display: block;
     padding-bottom: 10px;
-}
-
-.input-dados {
-    display: flex;
-    font-size: 13px;
-    color: #757575;
 }
 
 input {
@@ -149,6 +144,7 @@ label {
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #menu-itens{

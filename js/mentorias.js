@@ -1,3 +1,5 @@
+const pesquisa = document.getElementById('pesquisa')
+
 const mostrarTabelaMentoria = (mentorias) => {
     const tabelaMentoria = document.querySelector('#tbody')
     tabelaMentoria.innerHTML = ''
@@ -6,7 +8,7 @@ const mostrarTabelaMentoria = (mentorias) => {
         let status = 'Inativo'
         if (mentoria.status) {
             status = 'Ativo'
-        }
+        }        
 
         const mentoriaHtml = 
         `
@@ -26,9 +28,15 @@ const mostrarTabelaMentoria = (mentorias) => {
     });
 }
 
-const getMentorias = async () => {
+const getMentorias = async (textoPesquisa) => {
+    let palavraChave = ''
+
+    if (textoPesquisa) {
+        palavraChave = `?q=${textoPesquisa}`
+    }
+
     try {
-        const apiResponse = await fetch('https://api-arnia-projeto-modulo-01.onrender.com/mentorias')
+        const apiResponse = await fetch(`https://api-arnia-projeto-modulo-01.onrender.com/mentorias${palavraChave}`)
         const mentorias = await apiResponse.json()
         console.log(mentorias)
         mostrarTabelaMentoria(mentorias)
@@ -62,14 +70,23 @@ const excluirMentoria = async (id) => {
         method: 'DELETE',
         headers: {
             'Content-type': 'application/json'
-        }
+        }        
     })
 
         getMentorias()
-    } catch (error) {
+    } catch(error) {
         console.error(error)
-    }
-    
+    }      
 }
+
+pesquisa.addEventListener('keyup', (e) => {
+    const palavraChave = pesquisa.value
+    if (palavraChave === ''){
+        getMentorias()
+    } else if (e.key === 'Enter') {
+        getMentorias(palavraChave)
+    }
+})
+
 
 getMentorias()
