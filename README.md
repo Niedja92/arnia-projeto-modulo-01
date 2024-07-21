@@ -2,7 +2,7 @@
 
 🔗 Link da página: <https://arnia-projeto-modulo-01.vercel.app/>
 
-![Design do projeto](.projeto-final-modulo-01-arnia/img/dashboard-mentor-class.png)
+![Design do projeto](.projeto-final-modulo-01/img/dashboard-mentor-class.png)
 
 ## 💻 Sobre o projeto
 Projeto final do primeiro módulo da Arnia - Escola de Programação.
